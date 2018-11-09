@@ -1,0 +1,137 @@
+.parent {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    border: 5px solid black;
+}
+.parent > .child-1 {
+    grid-column: 1/5;
+    grid-row: 1/2;
+}
+
+.parent > .child-2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.parent > .child-3 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.parent > .child-4 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.parent > .child-5 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+.parent > .child-6 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.parent > .child-7 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.parent > .child-8 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.parent > .child-9 {
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+
+.parent > .child-10 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.parent > .child-11 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+.parent > .child-12 {
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+.parent > .child-13 {
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
+
+.parent > .child-14 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+.parent > .child-15 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+.parent > .child-16 {
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+
+.parent > .child-17 {
+    grid-column: 4/5;
+    grid-row: 5/6;
+}
+
+.parent > .child-18 {
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+
+.parent > .child-19 {
+    grid-column: 2/3;
+    grid-row: 6/7;
+}
+
+.parent > .child-20 {
+    grid-column: 3/5;
+    grid-row: 6/7;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border: 3px solid white;
+    border-collapse: collapse;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 3px 3px 3px black;
+    background: lightgrey;
+    font-size: 2rem;
+}
+
+button:hover {
+    background-color: darkgray;
+}
+
+.input {
+    width: 380px;
+    height: 100%;
+    margin: 10px;
+    font-size: 3rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.symbols {
+    width: 100%;
+}
