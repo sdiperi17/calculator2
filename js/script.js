@@ -50,9 +50,9 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     document.getElementById("plus").addEventListener("click", function() {
-        if (inputVal.value.length > 0 && inputVal.value.indexOf("+") < 0) {
-            inputVal.value += `+`;
-        }
+        // if (inputVal.value.length > 0 && inputVal.value.indexOf("+") < 0) {
+        inputVal.value += `+`;
+        // }
     });
 
     document.getElementById("subtract").addEventListener("click", function() {
@@ -86,16 +86,20 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    document.getElementById("+/-").addEventListener("click", function() {
-        let valueArr = inputVal.value.split("");
-        if (valueArr[0] === "-") {
-            valueArr.shift();
-            inputVal.value = valueArr.join("");
-        } else {
-            valueArr.unshift("-");
-            inputVal.value = valueArr.join("");
-            console.log(valueArr);
-        }
+    document.getElementById("avg").addEventListener("click", function() {
+        mystring = inputVal.value.replace(/\+/g, " ").split(" ");
+        let sum = eval(inputVal.value);
+        let length = mystring.length;
+        console.log(length, mystring, inputVal.value, sum);
+        inputVal.value = sum / length;
+        // if (valueArr[0] === "-") {
+        //     valueArr.shift();
+        //     inputVal.value = valueArr.join("");
+        // } else {
+        //     valueArr.unshift("-");
+        //     inputVal.value = valueArr.join("");
+        //     console.log(valueArr);
+        // }
     });
 
     document.getElementById("clear").addEventListener("click", function() {
